@@ -1,0 +1,29 @@
+1)start.spring.io
+
+2)dependencies 
+      1)spring web
+      2)spring security
+3) download 
+
+4) controller  
+
+5) model 
+
+6) application.properties 
+     spring.security.user.name=
+     spring.security.user.password=
+     spring.security.roles=ADMIN
+
+7) config 
+   
+       @configuration
+
+       @Bean
+public SecurityFilterChain filterChain(HttpSecurity http) {
+	http.csrf.disable().authorizeHtppReq
+		// ...
+		.httpBasic(withDefaults());
+	return http.build();
+}
+         
+8) for more https://docs.spring.io/spring-security/reference/servlet/authentication/index.html
